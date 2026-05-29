@@ -10,8 +10,8 @@ playerImage.src = `shadow_dog.png`;
 const spriteWidth = 575;
 const spriteHeight = 523;
 
-let frameX = 0;
-let frameY = 0;
+var frameX = 0;
+var frameY = 0;
 let gameFrame = 0;
 const staggerFrames = 5;
 
@@ -48,6 +48,10 @@ c2.addEventListener("click", function(e){
 		ctx2.fillRect(50,40, 100, 20);
 		ctx2.fillStyle = 'white';
 		ctx2.fillText("Oop Got me", 75, 55, 100);
+		frameY ++;
+		if (frameY > 2){
+			frameY = 0;
+		}
 		setTimeout(function(){
 			ctx2.clearRect(50, 40, 100, 20);
 			ctx2.fillStyle = 'black';
