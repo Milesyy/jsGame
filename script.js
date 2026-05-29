@@ -49,6 +49,7 @@ c2.addEventListener("click", function(e){
 		ctx2.fillStyle = 'white';
 		ctx2.fillText("Oop Got me", 75, 55, 100);
 		frameY ++;
+		console.log(frameY);
 		if (frameY > 2){
 			frameY = 0;
 		}
