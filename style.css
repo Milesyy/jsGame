@@ -7,3 +7,12 @@
 	width: 600px;
 	height: 600px;
 }
+
+#canvas2 {
+  width: 200px;
+  height: 100px;
+  border: 2px solid darkblue;
+  position: relative;
+  left: 200px;
+  right: 200px;
+}
